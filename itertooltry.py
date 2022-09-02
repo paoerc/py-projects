@@ -8,15 +8,15 @@ wildcard = module.upper()
 pastepattern = destination + '/Modules/' + wildcard + "/vectors"
 pastetiming =  destination + '/Modules/' + wildcard + "/timing"
 
-funcpath = glob.glob(source + "/tmp-pattern/" + wildcard + "*/")     #/home/mc_aurix/UserData/Kristine/autogen/test_M3990BUP0AA932022-08-11_scan351/tmp-pattern/SCAN..../
+funcpath = glob.glob(source + "/tmp-pattern/" + wildcard + "*/")    
 
 strip = str(funcpath).strip("['']")
 
-path = glob.glob(strip + "*")                     #/home/mc_aurix/UserData/Kristine/autogen/test_M3990BUP0AA932022-08-11_scan351/tmp-pattern/SCAN..../func, module, scan folders (array)
+path = glob.glob(strip + "*")                     
 
 
 #print (path)
-#path1= str(funcpath).strip("'[]'")					#stripped /home/mc_aurix/UserData/Kristine/autogen/test_M3990BUP0AA932022-08-11_scan351/tmp-pattern/SCAN..../func, module, scan folders string
+#path1= str(funcpath).strip("'[]'")					
 
 combi = list(itertools.combinations(path, 2))
 #duo = combi [i]
